@@ -21,7 +21,7 @@ app.use(cors({
     methods:["GET" , "POST" , "PUT" , "PATCH" , "DELETE"],
     credentials:true
 }));
-app.options("*",cors());
+
 
 app.use("/api/auth",authRouter);
 app.use("/api/user",userRouter);
