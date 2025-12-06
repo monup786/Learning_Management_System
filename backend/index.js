@@ -18,8 +18,10 @@ app.use(cors({
            "https://learning-management-system-puvm.onrender.com",
             "http://localhost:5173"
            ],
+    methods:["GET" , "POST" , "PUT" , "PATCH" , "DELETE"],
     credentials:true
 }));
+app.options("*",cors());
 
 app.use("/api/auth",authRouter);
 app.use("/api/user",userRouter);
