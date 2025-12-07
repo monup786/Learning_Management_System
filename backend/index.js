@@ -14,7 +14,9 @@ const port=process.env.PORT;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:"https://learning-management-system-1-0vos.onrender.com",
+    origin:["https://learning-management-system-1-0vos.onrender.com"
+,"http://localhost:5173"
+    ],
     credentials:true
 }));
 
