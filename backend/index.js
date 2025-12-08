@@ -17,6 +17,8 @@ app.use(cors({
     origin:["https://learning-management-system-1-0vos.onrender.com"
 ,"http://localhost:5173"
     ],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials:true
 }));
 
